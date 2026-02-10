@@ -1,0 +1,49 @@
+/* 1. Сброс базовых отступов браузера для предсказуемости */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Настройки переменных для легкого изменения цветов в будущем */
+:root {
+    --font-main: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --color-bg: #f4f4f9;       /* Светлый, но не кипенно-белый фон */
+    --color-text: #333333;     /* Темно-серый текст (мягче черного) */
+    --color-heading: #1a1a1a;  /* Почти черный для заголовков */
+    --spacing-unit: 1.5rem;
+}
+
+/* 3. Основные стили страницы */
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;          /* Улучшает читаемость текста */
+    
+    /* Центрирование контента по центру экрана */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;         /* Высота во весь экран */
+    padding: 20px;             /* Отступы от краев на мобильных */
+    text-align: center;
+}
+
+/* 4. Стили заголовка */
+h1 {
+    color: var(--color-heading);
+    font-size: 2.5rem;         /* Крупный размер */
+    font-weight: 700;
+    margin-bottom: 1rem;       /* Отступ снизу до параграфа */
+    letter-spacing: -0.02em;   /* Чуть плотнее буквы для стиля */
+}
+
+/* 5. Стили параграфа */
+p {
+    font-size: 1.125rem;       /* Чуть больше стандартного (18px) */
+    color: #555;               /* Текст чуть светлее заголовка */
+    max-width: 600px;          /* Ограничение ширины строки для удобства чтения */
+}
+
