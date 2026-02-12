@@ -9,5 +9,5 @@
 
 ## Ссылки на ресурсы
 
-- [Макет в Figma](https://www.figma.com/design/C7JUOGeubzjeAdfQzAeqDk/%D0%9F%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B0?node-id=0-1&t=NCLWyrEbI51I8KGG-1&view=variables)
+- [Макет в Figma](https://www.figma.com/design/deF5ixGtbP3s1cQE4dsNe1/Портфолио-фотографа?node-id=0-1&p=f&t=XuhV01mipe2nhehi-0)
 - [Репозиторий проекта](https://github.com/MarieSamota/photographer-portfolio)
