@@ -1,14 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио фотографа</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <h1>Добро пожаловать в Портфолио фотографа!</h1>
-    <p>Это стартовая страница моего веб-приложения.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Портфолио фотографа Алина" />
+    <title>PhotoPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body itemscope itemtype="https://schema.org/WebPage">
+    <a href="#main" class="skip-link">Перейти к основному содержимому</a>
+
+    <header class="header" itemprop="header">
+      <nav class="nav">
+        <div class="header__logo">Alina Photography</div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Обо мне</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="main" itemprop="mainContent">
+      <article
+        id="about"
+        class="about"
+        itemscope
+        itemtype="https://schema.org/Person"
+      >
+        <h1 class="about__name" itemprop="name">Алина</h1>
+        <p class="about__profession" itemprop="jobTitle">
+          Профессиональный фотограф
+        </p>
+
+        <p class="about__description" itemprop="description">
+          Я Алина — фотограф со своим взглядом на свет и людей. Помогаю
+          сохранить ваши самые важные воспоминания.
+        </p>
+
+        <img
+          src="images/main-photo.jpg"
+          alt="Портрет фотографа Алины с камерой"
+          class="about__img"
+          itemprop="image"
+        />
+      </article>
+
+      <section id="portfolio" class="portfolio">
+        <h2 class="portfolio__title">Мои последние работы</h2>
+        <p class="portfolio__update">
+          Обновлено: <time datetime="2026-02-23">23 февраля 2026</time>
+        </p>
+
+        <div class="portfolio__gallery">
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-1.jpg"
+              alt="Свадебная фотосессия на закате"
+              class="gallery-item__img"
+            />
+            <figcaption class="gallery-item__caption">Портрет</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-3.jpg"
+              alt="Студийный портрет девушки"
+              class="gallery-item__img"
+            />
+            <figcaption class="gallery-item__caption">Природа</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <h3 class="sidebar__title">Мои услуги</h3>
+      <ul class="sidebar__list">
+        <li>Портретная съёмка</li>
+        <li>Природная съёмка</li>
+        <li>Репортажная съёмка</li>
+      </ul>
+    </aside>
+
+    <footer id="contacts" class="footer" itemprop="footer">
+      <div
+        class="business-info"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
+        <img
+          src="images/icon.png"
+          alt="Логотип студии"
+          class="business-info__logo"
+          itemprop="image"
+        />
+        <h3 class="business-info__name" itemprop="name">
+          Студия «PhotoPortfolio»
+        </h3>
+
+        <p class="business-info__description" itemprop="description">
+          Профессиональная фотостудия в Минске.
+        </p>
+
+        <div
+          class="founder-info"
+          itemprop="member"
+          itemscope
+          itemtype="https://schema.org/Person"
+        >
+          <p>Ведущий фотограф: <span itemprop="name">Алина</span></p>
+          <meta itemprop="description" content="Основатель студии." />
+        </div>
+
+        <div
+          itemprop="address"
+          itemscope
+          itemtype="https://schema.org/PostalAddress"
+        >
+          <span itemprop="streetAddress">пр-т Дзержинского, д. 47</span>,
+          <span itemprop="addressLocality">Минск</span>
+        </div>
+        <p>Телефон: <span itemprop="telephone">+375 (29) 555-55-55</span></p>
+        <p>Email: <span itemprop="email">alina.kk@gmail.com</span></p>
+      </div>
+
+      <p class="footer__copyright">&copy; 2026 Алина. Все права защищены.</p>
+    </footer>
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
