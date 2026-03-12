@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap");
+
+:root {
+  --color-background: #ffffff;
+  --color-text: #333333;
+  --color-accent: #111111;
+  --color-light-gray: #f4f4f4;
+
+  --font-family-main: "Mulish";
+  --font-family-heading: "Playfair Display";
+
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2.5rem;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+}

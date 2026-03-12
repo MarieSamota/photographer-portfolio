@@ -4,20 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Портфолио фотографа Алина" />
-    <title>PhotoPortfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap"
-      rel="stylesheet"
+    <meta
+      name="keywords"
+      content="фотография, фотограф, портретная съёмка, студия, Минск, свадьба, портрет, природа, семья, 
+      lifestyle, профессиональный фотограф, фотостудия, photo portfolio, Alina Photography"
     />
+    <title>PhotoPortfolio</title>
+    <link rel="icon" href="images/icon.png" type="image/png" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body itemscope itemtype="https://schema.org/WebPage">
     <a href="#main" class="skip-link">Перейти к основному содержимому</a>
 
     <header class="header" itemprop="header">
       <nav class="nav">
+        <img
+          src="images/icon.png"
+          alt="Иконка профиля фотографа"
+          class="about__icon"
+        />
         <div class="header__logo">Alina Photography</div>
+        <button id="menu-toggle" class="nav__burger">☰</button>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#about" class="nav__link">Обо мне</a>
@@ -66,19 +78,48 @@
         <div class="portfolio__gallery">
           <figure class="gallery-item">
             <img
-              src="images/gallery-1.jpg"
-              alt="Свадебная фотосессия на закате"
+              src="images/gallery-3.jpg"
+              alt="Свадебная фотосессия на закате: невеста и жених держат руки, золотой час"
+              title="Свадебная фотосессия на закате: невеста и жених держат руки, золотой час"
               class="gallery-item__img"
             />
-            <figcaption class="gallery-item__caption">Портрет</figcaption>
+            <figcaption class="gallery-item__caption">Свадьба</figcaption>
           </figure>
           <figure class="gallery-item">
             <img
-              src="images/gallery-3.jpg"
-              alt="Студийный портрет девушки"
+              src="images/gallery-2.jpg"
+              alt="Студийный портрет девушки в естественном освещении, классический стиль"
+              title="Студийный портрет девушки в естественном освещении, классический стиль"
+              class="gallery-item__img"
+            />
+            <figcaption class="gallery-item__caption">Студия</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-1.jpg"
+              alt="Девушка в звездном платье позирует между двумя стульями в окружении драматичных теней."
+              title="Девушка в звездном платье позирует между двумя стульями в окружении драматичных теней."
               class="gallery-item__img"
             />
             <figcaption class="gallery-item__caption">Природа</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-5.jpg"
+              alt="Городская съёмка: момент из жизни в сером городе работника, красные акценты"
+              title="Городская съёмка: момент из жизни в сером городе работника, красные акценты"
+              class="gallery-item__img"
+            />
+            <figcaption class="gallery-item__caption">Семья</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-6.jpg"
+              alt="Портретная съемка в стиле лайфстайл: девушка с кошкой на кровати рядом с окном, дневной свет"
+              title="Портретная съемка в стиле лайфстайл: девушка с кошкой рядом на кровати с окном, дневной свет"
+              class="gallery-item__img"
+            />
+            <figcaption class="gallery-item__caption">Lifestyle</figcaption>
           </figure>
         </div>
       </section>
@@ -128,11 +169,28 @@
           itemscope
           itemtype="https://schema.org/PostalAddress"
         >
-          <span itemprop="streetAddress">пр-т Дзержинского, д. 47</span>,
-          <span itemprop="addressLocality">Минск</span>
+          Адрес:
+          <a
+            href="https://maps.google.com/maps?q=пр-т+Дзержинского+д.+47+Минск"
+            target="_blank"
+            style="color: inherit; text-decoration: none"
+          >
+            <span itemprop="streetAddress">пр-т Дзержинского, д. 47</span>,
+            <span itemprop="addressLocality">Минск</span>
+          </a>
         </div>
-        <p>Телефон: <span itemprop="telephone">+375 (29) 555-55-55</span></p>
-        <p>Email: <span itemprop="email">alina.kk@gmail.com</span></p>
+        <p>
+          Телефон:
+          <a href="tel:+375295555555" itemprop="telephone"
+            >+375 (29) 555-55-55</a
+          >
+        </p>
+        <p>
+          Email:
+          <a href="mailto:alina.kk@gmail.com" itemprop="email"
+            >alina.kk@gmail.com</a
+          >
+        </p>
       </div>
 
       <p class="footer__copyright">&copy; 2026 Алина. Все права защищены.</p>

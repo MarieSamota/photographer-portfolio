@@ -1,0 +1,81 @@
+/* 1. Сброс базовых отступов браузера для предсказуемости */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Основные стили страницы */
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: var(--font-size-base);
+  padding: var(--spacing-md);
+}
+
+/* 4. Отзывчивые изображения по умолчанию */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. Стили заголовка */
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-heading);
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+/* 6. Стили параграфа */
+p {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+/* 7. Desktop Grid Layout (1024px и выше) */
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main sidebar"
+      "footer footer";
+    gap: 0;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}

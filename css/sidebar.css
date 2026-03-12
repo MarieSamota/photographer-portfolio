@@ -1,0 +1,66 @@
+/* SIDEBAR STYLES - Mobile First Approach */
+
+/* Mobile: Sidebar displayed as part of main flow */
+.sidebar {
+  background-color: var(--color-light-gray);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  border-radius: 8px;
+}
+
+.sidebar__title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-lg);
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.sidebar__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.sidebar__list li {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  padding: var(--spacing-sm);
+  text-align: center;
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--spacing-md);
+}
+
+/* TABLET: Sidebar in main flow (min-width: 768px) */
+@media (min-width: 768px) {
+  .sidebar {
+    padding: var(--spacing-lg);
+  }
+
+  .sidebar__title {
+    font-size: var(--font-size-lg);
+    text-align: left;
+  }
+
+  .sidebar__list li {
+    text-align: left;
+  }
+}
+
+/* DESKTOP: Sidebar positioned on the right (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .sidebar {
+    margin-bottom: 0;
+  }
+
+  .sidebar__list li {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar__list li:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
