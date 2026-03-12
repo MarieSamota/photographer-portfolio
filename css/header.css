@@ -37,6 +37,8 @@
   flex-direction: column;
   gap: var(--spacing-sm);
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav__list.active {
@@ -45,6 +47,7 @@
 
 .nav__item {
   width: 100%;
+  text-align: center;
 }
 
 .nav__link {
@@ -54,7 +57,6 @@
   font-size: var(--font-size-base);
   font-weight: 500;
   padding: var(--spacing-sm);
-  transition: color 0.3s ease;
 }
 
 .nav__link:hover {

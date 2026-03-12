@@ -1,11 +1,9 @@
-/* 1. Сброс базовых отступов браузера для предсказуемости */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 2. Основные стили страницы */
 body {
   font-family: var(--font-family-main);
   background-color: var(--color-background);
@@ -15,14 +13,12 @@ body {
   padding: var(--spacing-md);
 }
 
-/* 4. Отзывчивые изображения по умолчанию */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* 5. Стили заголовка */
 h1,
 h2,
 h3 {
@@ -41,7 +37,6 @@ h2 {
   margin-bottom: var(--spacing-md);
 }
 
-/* 6. Стили параграфа */
 p {
   font-size: var(--font-size-base);
   color: var(--color-text);
@@ -49,7 +44,6 @@ p {
   line-height: 1.6;
 }
 
-/* 7. Desktop Grid Layout (1024px и выше) */
 @media (min-width: 1024px) {
   body {
     display: grid;

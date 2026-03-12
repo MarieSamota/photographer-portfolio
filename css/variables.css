@@ -4,7 +4,6 @@
   --color-background: #ffffff;
   --color-text: #333333;
   --color-accent: #111111;
-  --color-light-gray: #f4f4f4;
 
   --font-family-main: "Mulish";
   --font-family-heading: "Playfair Display";
@@ -19,7 +18,4 @@
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 4rem;
-
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1024px;
 }

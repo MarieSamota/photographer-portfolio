@@ -1,6 +1,3 @@
-/* SIDEBAR STYLES - Mobile First Approach */
-
-/* Mobile: Sidebar displayed as part of main flow */
 .sidebar {
   background-color: var(--color-light-gray);
   padding: var(--spacing-md);
@@ -30,9 +27,9 @@
   text-align: center;
   border-left: 3px solid var(--color-accent);
   padding-left: var(--spacing-md);
+  cursor: pointer;
 }
 
-/* TABLET: Sidebar in main flow (min-width: 768px) */
 @media (min-width: 768px) {
   .sidebar {
     padding: var(--spacing-lg);
@@ -48,7 +45,6 @@
   }
 }
 
-/* DESKTOP: Sidebar positioned on the right (min-width: 1024px) */
 @media (min-width: 1024px) {
   .sidebar {
     margin-bottom: 0;
