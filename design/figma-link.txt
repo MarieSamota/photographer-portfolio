@@ -1,1 +1,5 @@
-https://www.figma.com/design/deF5ixGtbP3s1cQE4dsNe1/Untitled?node-id=1-4301&m=dev&t=7HnJAVxvR9cvtfxj-1
+dev mode link: https://www.figma.com/design/Y77oScKRa5ulxGDivcOvV0/alina-free-photographer-portfolio-figma-template?node-id=0-1&m=dev&t=gTICFlIto0S7tmEB-1
+
+copy link: https://www.figma.com/design/Y77oScKRa5ulxGDivcOvV0/alina-free-photographer-portfolio-figma-template?node-id=0-1&t=gTICFlIto0S7tmEB-1
+
+protocol link: https://www.figma.com/proto/Y77oScKRa5ulxGDivcOvV0/alina-free-photographer-portfolio-figma-template?node-id=0-1&t=gTICFlIto0S7tmEB-1

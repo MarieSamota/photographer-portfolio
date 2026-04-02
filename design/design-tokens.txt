@@ -1,0 +1,24 @@
+COLORS:
+
+Primary:
+#0E1112
+
+Background 1:
+#FFFFFF
+
+Background 2:
+#EEF7F9
+
+Text Secondary 1:
+#797979
+
+Text Secondary 2:
+#6A6B6B
+
+FONTS:
+
+Primary Font:
+Playfair Display
+
+Secondary Font:
+Mulish
